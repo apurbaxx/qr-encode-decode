@@ -1,19 +1,51 @@
 # QR Code Generator & Decoder
 
-Interactive Python app to create and read QR codes.
+A user-friendly interactive Python application for creating and reading QR codes through a simple terminal interface.
 
-## Install
-```
-python -m venv .venv; .\.venv\Scripts\Activate.ps1
+## Features
+
+- **Generate QR Codes**: Convert any text into QR code images
+- **Decode QR Codes**: Extract text from existing QR code images
+- **Interactive Menu**: Easy-to-use terminal interface with clear prompts
+- **Auto-generated Filenames**: Timestamps prevent file conflicts
+- **Image Preview**: Option to view generated/decoded QR codes
+- **Multiple Format Support**: Handles various image formats for decoding
+
+
+## Installation
+
+1. Clone or download this repository
+2. Set up virtual environment and install dependencies:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-## Usage
-```
-python .\app.py
-```
+### Main Menu Options
 
-Choose from the menu:
-1. Generate QR Code
-2. Read QR Code  
-3. Exit
+1. **Generate QR Code (Encode)**
+   - Enter your text/message
+   - Choose filename (or use auto-generated name)
+   - Optionally view the created QR code
+
+2. **Read QR Code (Decode)**  
+   - Provide path to QR code image
+   - View decoded text content
+   - Optionally display the original image
+
+3. **Exit**
+   - Close the application
+
+## Dependencies
+
+- `qrcode` - QR code generation
+- `Pillow` - Image processing
+- `pyzbar` - QR code decoding
+
+## Notes
+
+- Generated QR codes are saved as PNG files
+- The decoder can handle multiple QR codes in a single image
+- Ensure QR code images are clear and properly oriented for best results

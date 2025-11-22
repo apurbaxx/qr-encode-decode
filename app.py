@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-"""Simple QR Code generator and decoder with interactive terminal interface"""
 
 import os
 import sys
@@ -11,7 +9,6 @@ from pyzbar import pyzbar
 
 
 def print_banner():
-    """Print a welcome banner"""
     print("=" * 50)
     print("QR Code Generator & Decoder")
     print("=" * 50)
@@ -19,7 +16,6 @@ def print_banner():
 
 
 def get_user_choice():
-    """Get the main menu choice from user"""
     print("What would you like to do?")
     print("1. Generate QR Code (Encode)")
     print("2. Read QR Code (Decode)")
@@ -34,7 +30,6 @@ def get_user_choice():
 
 
 def encode_qr():
-    """Interactive QR code encoding"""
     print("\nQR Code Generator")
     print("-" * 20)
     
