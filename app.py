@@ -79,7 +79,7 @@ def encode_qr():
 
 
 def decode_qr():
-    """Interactive QR code decoding"""
+    """QR code decoding"""
     print("\nQR Code Decoder")
     print("-" * 18)
     
