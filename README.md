@@ -51,7 +51,6 @@ pip install -r requirements.txt
 *QR Code application interface*
 
 ![Screenshot 2](screenshots/img2.png)
-*Application in action*
 
 ### Sample QR Code
 ![Generated QR Code](file1.png)
